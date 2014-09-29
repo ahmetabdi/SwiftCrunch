@@ -17,6 +17,8 @@
 		E39A760219D985B600C0DED3 /* Sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = E39A760119D985B600C0DED3 /* Sprites.atlas */; };
 		E39A760419D988D000C0DED3 /* Cookie.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39A760319D988D000C0DED3 /* Cookie.swift */; };
 		E39A760619D98D8400C0DED3 /* Array2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39A760519D98D8400C0DED3 /* Array2D.swift */; };
+		E39A760819D9956600C0DED3 /* Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39A760719D9956600C0DED3 /* Set.swift */; };
+		E39A760A19D9958900C0DED3 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39A760919D9958900C0DED3 /* Level.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		E39A760119D985B600C0DED3 /* Sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = Sprites.atlas; path = ../../Resources/Sprites.atlas; sourceTree = "<group>"; };
 		E39A760319D988D000C0DED3 /* Cookie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cookie.swift; sourceTree = "<group>"; };
 		E39A760519D98D8400C0DED3 /* Array2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array2D.swift; sourceTree = "<group>"; };
+		E39A760719D9956600C0DED3 /* Set.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Set.swift; sourceTree = "<group>"; };
+		E39A760919D9958900C0DED3 /* Level.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,8 @@
 				E39A75E119D9857700C0DED3 /* GameScene.swift */,
 				E39A760319D988D000C0DED3 /* Cookie.swift */,
 				E39A760519D98D8400C0DED3 /* Array2D.swift */,
+				E39A760719D9956600C0DED3 /* Set.swift */,
+				E39A760919D9958900C0DED3 /* Level.swift */,
 				E39A75E319D9857700C0DED3 /* GameViewController.swift */,
 				E39A75E519D9857700C0DED3 /* Main.storyboard */,
 				E39A75E819D9857700C0DED3 /* Images.xcassets */,
@@ -226,7 +232,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E39A75E219D9857700C0DED3 /* GameScene.swift in Sources */,
+				E39A760A19D9958900C0DED3 /* Level.swift in Sources */,
 				E39A760419D988D000C0DED3 /* Cookie.swift in Sources */,
+				E39A760819D9956600C0DED3 /* Set.swift in Sources */,
 				E39A75E419D9857700C0DED3 /* GameViewController.swift in Sources */,
 				E39A75DE19D9857700C0DED3 /* AppDelegate.swift in Sources */,
 				E39A760619D98D8400C0DED3 /* Array2D.swift in Sources */,
@@ -421,6 +429,7 @@
 				E39A75FD19D9857700C0DED3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E39A75FE19D9857700C0DED3 /* Build configuration list for PBXNativeTarget "CrunchTests" */ = {
 			isa = XCConfigurationList;
@@ -429,6 +438,7 @@
 				E39A760019D9857700C0DED3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
