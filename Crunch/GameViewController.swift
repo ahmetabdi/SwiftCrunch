@@ -22,6 +22,21 @@ class GameViewController: UIViewController {
         scene.addSpritesForCookies(newCookies)
     }
     
+    func handleSwipe(swap: Swap) {
+        view.userInteractionEnabled = false
+        
+        if level.isPossibleSwap(swap) {
+            level.performSwap(swap)
+            scene.animateSwap(swap) {
+                self.view.userInteractionEnabled = true
+            }
+        } else {
+            scene.animateInvalidSwap(swap) {
+                self.view.userInteractionEnabled = true
+            }
+        }
+    }
+    
     override func prefersStatusBarHidden() -> Bool {
         return true
     }
@@ -46,6 +61,7 @@ class GameViewController: UIViewController {
         level = Level(filename: "Level_1")
         scene.level = level
         scene.addTiles()
+        scene.swipeHandler = handleSwipe
         skView.presentScene(scene)
         
         beginGame()
